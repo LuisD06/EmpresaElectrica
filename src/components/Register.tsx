@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import '../styles/register.css';
 export const Register = () => {
     return (
@@ -22,7 +23,8 @@ export const Register = () => {
                         <label htmlFor="">Correo</label>
                         <input type="text" name="userEmail" />
                         <div className="login-clue">
-                            <p>¿Ya tiene una cuenta? <a href="">Iniciar Sesión</a></p>
+                            {/* <p>¿Ya tiene una cuenta? <a href="">Iniciar Sesión</a></p> */}
+                            <p>¿Ya tiene una cuenta? <Link to={"/Login"}>Iniciar Sesión</Link></p>
                         </div>
                     </div>
                     <div className="form-step">
